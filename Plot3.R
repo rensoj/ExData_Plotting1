@@ -18,6 +18,7 @@ plot3 <- function(){
   SubMet2 <- suppressWarnings(as.numeric(levels(DateSub$Sub_metering_2))[DateSub$Sub_metering_2])
   SubMet3 <- DateSub$Sub_metering_3
   
+  
   png(filename="plot3.png")
   plot(RefTimes,SubMet1,type="l",xlab="",ylab="Energy sub metering")
   lines(RefTimes,SubMet2,type="l",col="red")

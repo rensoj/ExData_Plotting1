@@ -15,6 +15,7 @@ plot2 <- function(){
   TimeStr <- as.character(levels(DateSub$Time))[DateSub$Time]
   RefTimes <- as.POSIXct(paste(DateStr,TimeStr),format="%d/%m/%Y %H:%M:%S")
   
+  
   png(filename="plot2.png")
   plot(RefTimes,ActPowSub,type="l",ylab="Global Active Power (kilowatts)",xlab="")
   dev.off()

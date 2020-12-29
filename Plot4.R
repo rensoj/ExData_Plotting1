@@ -23,6 +23,7 @@ plot4 <- function(){
   Volt <- suppressWarnings(as.numeric(levels(DateSub$Voltage))[DateSub$Voltage])
   GlobReacPow <- suppressWarnings(as.numeric(levels(DateSub$Global_reactive_power))[DateSub$Global_reactive_power])
   
+  
   png(filename="plot4.png")
   par(mfcol=c(2,2))
   plot(RefTimes,ActPowSub,type="l",ylab="Global Active Power",xlab="")
